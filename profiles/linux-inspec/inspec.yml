@@ -1,0 +1,22 @@
+name: linux-inspec
+title: InSpec Profile with a git dependency
+maintainer: The Author
+copyright: The Author
+license: Apache 2.0
+summary: InSpec profile with a git dependency that fails on centos
+version: 0.0.1
+
+# Initial testing and development of this profile is based on the
+# chef-server cookbook and its supported platforms.
+supports:
+  - os-name: ubuntu
+    release: 16.04
+  - os-name: ubuntu
+    release: 14.04
+  - os-name: ubuntu
+    release: 12.04
+  - platform-family: redhat
+depends:
+  - name: inspec-profile-wrapper-example
+    git: https://github.com/adamleff/inspec-profile-wrapper-example.git 
+ 
